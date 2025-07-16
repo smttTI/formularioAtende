@@ -225,7 +225,6 @@ function formatarCPF(cpf) {
 const textLines = [
     'ESTADO DE SERGIPE',
     'PREFEITURA MUNICIPAL DE ARACAJU',
-    'SECRETARIA MUNICIPAL DA DEFESA SOCIAL E DA CIDADANIA',
     'SUPERINTENDÊNCIA MUNICIPAL DE TRANSPORTES E TRÂNSITO',
     'DIRETORIA ADMINISTRATIVA E FINANCEIRA',
     'NÚCLEO DE PERÍCIA MÉDICA'
@@ -239,8 +238,8 @@ function carregarImagem(url) {
         img.crossOrigin = "Anonymous";
         img.onload = () => {
             const canvas = document.createElement("canvas");
-            canvas.width = img.width;
-            canvas.height = img.height;
+            canvas.width = 2300;
+            canvas.height = 920;
             const ctx = canvas.getContext("2d");
             ctx.drawImage(img, 0, 0);
             resolve(canvas.toDataURL("image/png"));
@@ -436,16 +435,16 @@ gerarPdf.addEventListener('click', async () => {
      doc.setFontSize(18);
      doc.setFontSize(12);
      
-     const URLLogo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_F4EJslF8WhpMy0bCSb7D3aJpiYcZbpxxb0_-4KfgKzvUMEtr6yYQc9RL-TfC44m5-4&usqp=CAU';
+     const URLLogo = 'https://res.cloudinary.com/dizojordc/image/upload/v1752668791/WhatsApp_Image_2025-07-16_at_7.38.50_AM_1_1_lreghf.png';
      const logoImg = await carregarImagem(URLLogo); // await agora dentro de uma função async
      doc.addImage(logoImg, 'PNG', 10, 10, 50, 20);
  
     // Adiciona o texto institucional ao lado da imagem
      doc.setFontSize(9);
-     textY = 13
+     textY = 15
      textLines.forEach(line => {
          doc.text(line, 65, textY);
-         textY += 3;
+         textY += 4;
      });
     
 
@@ -523,7 +522,7 @@ credencialEstacionamento.addEventListener('click', async () => {
    
     
      //Adiciona a imagem do logo
-    const logoURL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_F4EJslF8WhpMy0bCSb7D3aJpiYcZbpxxb0_-4KfgKzvUMEtr6yYQc9RL-TfC44m5-4&usqp=CAU';
+    const logoURL = 'https://res.cloudinary.com/dizojordc/image/upload/v1752668791/WhatsApp_Image_2025-07-16_at_7.38.50_AM_1_1_lreghf.png';
     const logoImg = await carregarImagem(logoURL);
     doc.addImage(logoImg, 'PNG', 10, 10, 50, 20);
 
@@ -531,10 +530,10 @@ credencialEstacionamento.addEventListener('click', async () => {
     doc.setFontSize(9);
  
 
-    let textY = 13;
+    let textY = 15;
     textLines.forEach(line => {
         doc.text(line, 65, textY);
-        textY += 3;
+        textY += 4;
     });
 
     // Título centralizado
@@ -581,10 +580,10 @@ let y = rectY + 20; // Ajusta a posição do corpo do texto para começar abaixo
     
         // Adiciona o texto institucional ao lado da imagem
         doc.setFontSize(9);
-        textY = 195
+        textY = 197
         textLines.forEach(line => {
             doc.text(line, 65, textY);
-            textY += 3;
+            textY += 4;
         });
         
         doc.setFontSize(12);
@@ -699,7 +698,7 @@ trocarCinzaRoxo.addEventListener('click', async () => {
     const textoEndereco = "______________________________________________________________\nSMTT, Rua Roberto Fonseca, 200, Inacio Barbosa, Aracaju-SE\nFone: (79) 98836-6435 e 98836-6497";
 
     //Adiciona a imagem do logo
-    const logoURL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_F4EJslF8WhpMy0bCSb7D3aJpiYcZbpxxb0_-4KfgKzvUMEtr6yYQc9RL-TfC44m5-4&usqp=CAU';
+    const logoURL = 'https://res.cloudinary.com/dizojordc/image/upload/v1752668791/WhatsApp_Image_2025-07-16_at_7.38.50_AM_1_1_lreghf.png';
     const logoImg = await carregarImagem(logoURL);
     doc.addImage(logoImg, 'PNG', 10, 10, 50, 20);
 
@@ -707,10 +706,10 @@ trocarCinzaRoxo.addEventListener('click', async () => {
     doc.setFontSize(9);
 
 
-    let textY = 13;
+    let textY = 15;
     textLines.forEach(line => {
         doc.text(line, 65, textY);
-        textY += 3;
+        textY += 4;
     });
 
     doc.setFontSize(12);
@@ -841,7 +840,7 @@ trocarRoxoCinza.addEventListener('click', async () => {
     const textoEndereco = "______________________________________________________________\nSMTT, Rua Roberto Fonseca, 200, Inacio Barbosa, Aracaju-SE\nFone: (79) 98836-6435 e 98836-6497";
 
     //Adiciona a imagem do logo
-    const logoURL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm_F4EJslF8WhpMy0bCSb7D3aJpiYcZbpxxb0_-4KfgKzvUMEtr6yYQc9RL-TfC44m5-4&usqp=CAU';
+    const logoURL = 'https://res.cloudinary.com/dizojordc/image/upload/v1752668791/WhatsApp_Image_2025-07-16_at_7.38.50_AM_1_1_lreghf.png';
     const logoImg = await carregarImagem(logoURL);
     doc.addImage(logoImg, 'PNG', 10, 10, 50, 20);
 
@@ -849,10 +848,10 @@ trocarRoxoCinza.addEventListener('click', async () => {
     doc.setFontSize(9);
 
 
-    let textY = 13;
+    let textY = 17;
     textLines.forEach(line => {
         doc.text(line, 65, textY);
-        textY += 3;
+        textY += 4;
     });
 
     doc.setFontSize(12);
