@@ -560,7 +560,7 @@ let y = rectY + 20; // Ajusta a posição do corpo do texto para começar abaixo
 
 
 
-    const textoEndereco = "Rua Roberto Fonseca, 200, Inacio Barbosa, Aracaju-SE\nFone: (79) 98836-6435 e 98836-6497";
+    const textoEndereco = "Rua Roberto Fonseca, 200, Inacio Barbosa, Aracaju-SE\nFone: (79) 98836-6535 e 98836-6497";
     y += 15; // Ajusta a posição para o novo bloco de texto
     doc.setFontSize(9);
     //doc.text(textoEndereco, 105, 182, { align: 'center' }); // Centraliza o texto no eixo X
@@ -624,7 +624,7 @@ let y = rectY + 20; // Ajusta a posição do corpo do texto para começar abaixo
         
         doc.text(`LOCAL PERÍCIA`, 105, textY+3,{ align: 'center' });
         doc.setFontSize(13)
-        const textoEnderecoAgendamento = "ENDEREÇO: R. Roberto Fonseca, 200, Inácio Barbosa, Aracaju - SE\nFone: (79) 98836-6435 e 98836-6497";
+        const textoEnderecoAgendamento = "ENDEREÇO: R. Roberto Fonseca, 200, Inácio Barbosa, Aracaju - SE\nFone: (79) 98836-6535 e 98836-6497";
         textY+=5;
         doc.text(textoEnderecoAgendamento, 105, textY+3, { align: 'center' });
         
@@ -695,7 +695,7 @@ trocarCinzaRoxo.addEventListener('click', async () => {
 
     const textoObsCoordenador = "Chefe do Núcleo de Atendimento - SMTT"
 
-    const textoEndereco = "______________________________________________________________\nSMTT, Rua Roberto Fonseca, 200, Inacio Barbosa, Aracaju-SE\nFone: (79) 98836-6435 e 98836-6497";
+    const textoEndereco = "______________________________________________________________\nSMTT, Rua Roberto Fonseca, 200, Inacio Barbosa, Aracaju-SE\nFone: (79) 98836-6535 e 98836-6497";
 
     //Adiciona a imagem do logo
     const logoURL = 'https://res.cloudinary.com/dizojordc/image/upload/v1752668791/WhatsApp_Image_2025-07-16_at_7.38.50_AM_1_1_lreghf.png';
@@ -837,7 +837,7 @@ trocarRoxoCinza.addEventListener('click', async () => {
 
     const textoObsCoordenador = "Chefe do Núcleo de Atendimento - SMTT"
 
-    const textoEndereco = "______________________________________________________________\nSMTT, Rua Roberto Fonseca, 200, Inacio Barbosa, Aracaju-SE\nFone: (79) 98836-6435 e 98836-6497";
+    const textoEndereco = "______________________________________________________________\nSMTT, Rua Roberto Fonseca, 200, Inacio Barbosa, Aracaju-SE\nFone: (79) 98836-6535 e 98836-6497";
 
     //Adiciona a imagem do logo
     const logoURL = 'https://res.cloudinary.com/dizojordc/image/upload/v1752668791/WhatsApp_Image_2025-07-16_at_7.38.50_AM_1_1_lreghf.png';
