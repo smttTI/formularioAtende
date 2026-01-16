@@ -573,7 +573,16 @@ credencialEstacionamento.addEventListener('click', async () => {
     doc.text(textoAssinatura, 105, y + 10, { align: 'center' });
     doc.text(textoDataAgendada, 20, y + 10);
    
+    doc.addImage(logoImg, 'PNG', 10, 192, 50, 20);
 
+    // Adiciona o texto institucional ao lado da imagem
+    doc.setFontSize(9);
+    textY = 197
+    textLines.forEach(line => {
+        doc.text(line, 65, textY);
+        textY += 4;
+    });
+    
     doc.setFontSize(12);
     // 1️⃣ Espaço após o cabeçalho   
 
