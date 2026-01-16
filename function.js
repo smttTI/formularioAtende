@@ -572,8 +572,7 @@ credencialEstacionamento.addEventListener('click', async () => {
     // Adiciona o texto de assinatura e data centralizado
     doc.text(textoAssinatura, 105, y + 10, { align: 'center' });
     doc.text(textoDataAgendada, 20, y + 10);
-
-    doc.text(`- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -`, 5, 190);
+   
 
 
     doc.addImage(logoImg, 'PNG', 10, 192, 50, 20);
